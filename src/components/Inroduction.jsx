@@ -49,7 +49,7 @@ const Inroduction = () => {
   className="p-2 px-5 bg-black rounded-full dark:bg-white dark:text-black text-white"
   onClick={() => {
     const link = document.createElement('a');
-    link.href = '/mycv.pdf'; // PDF must be in public folder
+    link.href = '/mycv.pdf'; 
     link.setAttribute('download', 'mycv.pdf');
     document.body.appendChild(link);
     link.click();
