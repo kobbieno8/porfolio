@@ -1,11 +1,12 @@
 import { delay, motion, useAnimate, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import commentsdata from '../comments.json'
 
 import { ThemeProvider } from '../../my-project/src/theme/Themebtn';
 import { FaGithub, FaThumbsUp } from 'react-icons/fa';  
 import { Link } from 'react-router-dom';
 
-const Card = ( ishome ) => {
+const Card = (  ) => {
     const ref = useRef();
   const inview  = useInView(ref,{once: true})
   const mainControls = useAnimation();
@@ -16,15 +17,11 @@ const Card = ( ishome ) => {
     }
   },[inview]) 
     const [comments, setComments] = useState([]);
-    const [likes, setLikes] = useState([]);
 
-    const url = ishome ? 'http://localhost:8000/comments?_limit=3': 'http://localhost:8000/comments';
     useEffect(() => {
-        const fetch_info = async () => {
-            const res = await fetch(url);
-            const data = await res.json(ishome);
-            setComments(data);
-            setLikes(data.map(() => 0));
+        const fetch_info =  () => {
+            setComments(commentsdata.comments);
+           
         };
         fetch_info();
     }, []);
@@ -32,27 +29,11 @@ const Card = ( ishome ) => {
     let arr = ["/cards/The_food_vendor.jpg", "/cards/The_project.jpg", "/cards/database.webp"];
     let arr_link = ["https://github.com/kobbieno8/my_food_management", "https://github.com/kobbieno8/my_jave_project_management_teacher_and_student", "https://github.com/kobbieno8/my_database_project_with_documentation"];
 
-    const handleLike = (index) => {
-        setLikes((prevLikes) => {
-            const newLikes = [...prevLikes];
-            newLikes[index] += 1; 
-            return newLikes;
-        });
-    };
-    useEffect(() => {
-    
-        const fetchRepos = async () => {
-          const res = await fetch("https://api.github.com/users/Kobbieno8/repos");
-          const data = await res.json();
-         
-          console.log(data);
-          
-        };
-        fetchRepos();
-      }, []);
-      
+  
+
    
     return (
+        
         <ThemeProvider>
             <motion.div
             
@@ -105,11 +86,11 @@ const Card = ( ishome ) => {
                        
                         <div className="flex items-center justify-between">
                             <button
-                                onClick={() => handleLike(index)}
+                               
                                 className="flex items-center space-x-2 text-indigo-500 hover:text-indigo-700"
                             >
                                 <FaThumbsUp />
-                                <span>{likes[index]}</span> 
+                               
                             </button>
                         </div>
                         </div>

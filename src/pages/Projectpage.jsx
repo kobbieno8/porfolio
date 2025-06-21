@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ThemeProvider } from '../../my-project/src/theme/Themebtn';
 import { useParams } from 'react-router-dom';
+import commentsdata from  '../comments.json'
 
 const Projectpage = () => {
   const { id } = useParams();
@@ -8,22 +9,21 @@ const Projectpage = () => {
   const [loading, setLoading] = useState(true); 
   const [error, setError] = useState(null); 
 
-  useEffect(() => {
-    const fetchInfo = async () => {
-      try {
-        console.log(id);
-        const res = await fetch(`http://localhost:8000/comments/${id}`);
-        if (!res.ok) throw new Error('Failed to fetch data');
-        const data = await res.json();
-        setComments(data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchInfo();
-  }, [id]);
+ useEffect(() => {
+  try {
+    const allComments = commentsdata.comments;
+    const singleComment = allComments.find((c) => c.id === id);
+    setComments(singleComment);
+    if (!singleComment) {
+      setError("Project not found");
+    }
+  } catch (err) {
+    setError(err.message);
+  } finally {
+    setLoading(false);
+  }
+}, [id]);
+
 
   if (loading) {
     return <div>Loading...</div>;
