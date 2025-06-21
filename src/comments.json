@@ -1,0 +1,241 @@
+{
+  "comments": [
+    {
+      "id": "1",
+      "title": " vendor management system",
+      "type": "School-project",
+      "short": "system that  manages the interaction between a vendor and customer",
+      "description": "This c# based system  in conjuction with the princples of system analsis and design it's main objective is to create a system to that optimizes business functions for vendors ",
+      "location": "Ethiopia,Addis abeba",
+      "company": {
+        "name": "Addis Ababa University",
+        "description": " AAU provides an exceptional educational experience to all students that prepares them for successful completion,enjoyabilty and job creation, AAU also enjoys of having the acaccolade of being one  of the oldest universities in eastern africa",
+        "contactEmail": "aau.press@aau.edu.et",
+        "contactPhone": "+251-111-239746"
+      }
+    },
+    {
+      "id": "2",
+      "title": "project management system",
+      "short": "system that  manages the interaction between teachers and students",
+      "type": "School-project",
+      "location": "Ethiopia,Addis abeba",
+      "description": "project management system is a system that faciltates the project submition and assignment of projects to students, this system has two sides to it student and teacher side ",
+      "company": {
+        "name": "Addis Ababa University",
+        "description": " AAU provides an exceptional educational experience to all students that prepares them for successful completion,enjoyabilty and job creation, AAU also enjoys of having the acaccolade of being one  of the oldest universities in eastern africa",
+        "contactEmail": "aau.press@aau.edu.et",
+        "contactPhone": "+251-111-239746"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Database management",
+      "type": "School-project",
+      "short": "a ruimentary database desgin,documuntaion and sql for a fictional company ",
+      "description": "a realtively simple project that has the entire design(physical and logical) of a database as well as and documentaion that might have needed sql was used to design the database in microsoft sql server",
+      "location": "Ethiopia,Addis abeba",
+      "company": {
+        "name": "Addis Ababa University",
+        "description": " AAU provides an exceptional educational experience to all students that prepares them for successful completion,enjoyabilty and job creation, AAU also enjoys of having the acaccolade of being one  of the oldest universities in eastern africa",
+        "contactEmail": "aau.press@aau.edu.et",
+        "contactPhone": "+251-111-239746"
+      }
+    },
+    {
+      "id": "4",
+      "title": "React Front-End Developer",
+      "type": "Part-Time",
+      "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
+      "location": "Ethiopia,Addis abeba",
+      "company": {
+        "name": "Addis Ababa University",
+        "description": " AAU provides an exceptional educational experience to all students that prepares them for successful completion,enjoyabilty and job creation, AAU also enjoys of having the acaccolade of being one  of the oldest universities in eastern africa",
+        "contactEmail": "aau.press@aau.edu.et",
+        "contactPhone": "+251-111-239746"
+      }
+    },
+  
+   
+    {
+      "name": "abel",
+      "email": "roman@gmail.com",
+      "comment": "yeah cuh on them dead homies",
+      "id": "3117"
+    },
+    {
+      "id": "d3c0",
+      "Name": "ruth gulbet",
+      "email": "ruthgulbet@yahoo.com",
+      "comment": "good website needs more styling  though"
+    },
+    {
+      "id": "5469",
+      "Name": "flkasjf",
+      "email": "fklasjfkasj@gmail.com",
+      "comment": "flkajslfkjaffasdfasdf"
+    },
+    {
+      "id": "f11e",
+      "Name": "flkasjf",
+      "email": "fklasjfkasj@gmail.com",
+      "comment": "flkajslfkjaffasdfasdf"
+    },
+    {
+      "id": "b3b8",
+      "Name": "",
+      "email": "",
+      "comment": ""
+    },
+    {
+      "id": "e3f6",
+      "Name": "",
+      "email": "",
+      "comment": ""
+    },
+    {
+      "id": "e9ca",
+      "Name": "",
+      "email": "",
+      "comment": "w"
+    },
+    {
+      "id": "8f4f",
+      "Name": "",
+      "email": "",
+      "comment": "w"
+    },
+    {
+      "id": "5a53",
+      "Name": "",
+      "email": "",
+      "comment": "w"
+    },
+    {
+      "id": "5540",
+      "Name": "dfs",
+      "email": "",
+      "comment": "w"
+    },
+    {
+      "id": "6469",
+      "Name": "",
+      "email": "",
+      "comment": "b"
+    },
+    {
+      "id": "0309",
+      "Name": "1",
+      "email": "s@gmail.com",
+      "comment": "b"
+    },
+    {
+      "id": "f591",
+      "Name": "a",
+      "email": "s@gmail.com",
+      "comment": "b"
+    },
+    {
+      "id": "2873",
+      "Name": "",
+      "email": "s@gmail.com",
+      "comment": "b"
+    },
+    {
+      "id": "663c",
+      "Name": "ff",
+      "email": "s@gmail.com",
+      "comment": "b"
+    },
+    {
+      "id": "6090",
+      "Name": "",
+      "email": "s@gmail.com",
+      "comment": "b"
+    },
+    {
+      "id": "329f",
+      "Name": "",
+      "email": "s@gmail.com",
+      "comment": "f"
+    },
+    {
+      "id": "de16",
+      "Name": "",
+      "email": "s@gmail.com",
+      "comment": ""
+    },
+    {
+      "id": "7ae4",
+      "Name": "",
+      "email": "s@gmail.com",
+      "comment": ""
+    },
+    {
+      "id": "fc5b",
+      "Name": "",
+      "email": "",
+      "comment": ""
+    },
+    {
+      "id": "861d",
+      "Name": "the",
+      "email": "thelion@gmail.com",
+      "comment": "fkasjfljasfljafjljfajsfjaljf"
+    },
+    {
+      "id": "c025",
+      "Name": "niga",
+      "email": "ng@gmail.com",
+      "comment": "romania is the greatest"
+    },
+    {
+      "id": "57ad",
+      "Name": "paper",
+      "email": "abel@gmail.com",
+      "comment": "yejegna lij"
+    },
+    {
+      "id": "24e9",
+      "Name": "Abel Gulbet",
+      "email": "mnm?@gmail.com",
+      "comment": "afads"
+    },
+    {
+      "id": "627b",
+      "Name": "Abel Gulbet",
+      "email": "mnm?@gmail.com",
+      "comment": "great man that u r"
+    },
+    {
+      "id": "16b4",
+      "Name": "Abel Gulbet the goat",
+      "email": "abel@gmail.com",
+      "comment": "great man that u r"
+    },
+    {
+      "id": "8393",
+      "Name": "ethiopia",
+      "email": "fskajfksjdfj@gmail.com",
+      "comment": "slkjflksjdfl"
+    },
+    {
+      "id": "b03c",
+      "Name": "Abel Gulbet",
+      "email": "ruthgulbet@yahoo.com",
+      "comment": "ccc"
+    },
+    {
+      "id": "a568",
+      "Name": "eht",
+      "email": "fd@gdlsg.cim",
+      "comment": "fdsf"
+    },
+    {
+      "id": "edec",
+      "Name": "eht",
+      "email": "fd@gdlsg.cim",
+      "comment": "fdsf"
+    }
+  ]
+}
