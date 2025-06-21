@@ -2,12 +2,12 @@ import pic from '../images/pic.jpg'
 import github from '../images/github.png'
 import linkden from '../images/linkden.png'
 import twitter from '../images/twitter.png'
-import cv from '../textdoc/cv.txt'
 import { ThemeProvider } from "../../my-project/src/theme/Themebtn";
 import {motion,useInView,useAnimation} from 'framer-motion'
 import { useEffect, useRef, useState } from 'react';
 
 const Inroduction = () => {
+  
   const ref = useRef();
   const inview  = useInView(ref,{once: true})
   const mainControls = useAnimation();
@@ -45,11 +45,20 @@ const Inroduction = () => {
     </p>
     </div>
     <div   variants={{ hidden: { opacity: 0, x:-200 }, show: { opacity: 1,x:0 } }} className='flex col space-x-10 '>
-      <button  className="p-2 px-5 bg-black rounded-full dark:bg-white dark:text-black text-white"onClick={()=>{ 
-        let elem = window.document.getElementById("down");
-        elem.click();
-      }} >download cv</button>
-   <a href={cv} id='down' download hidden>fs</a>
+     <button
+  className="p-2 px-5 bg-black rounded-full dark:bg-white dark:text-black text-white"
+  onClick={() => {
+    const link = document.createElement('a');
+    link.href = '/mycv.pdf'; // PDF must be in public folder
+    link.setAttribute('download', 'mycv.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }}
+>
+  Download CV
+</button>
+
    <div   variants={{ hidden: { opacity: 0, x: 100 }, show: { opacity: 1, x: 0 } }} className=' flex col space-x-6'>
    <a href="https://github.com/"><img src={github} /></a>
    <a href="https://linkedin.com/"><img src={linkden}/></a>
