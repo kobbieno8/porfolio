@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@syncfusion/ej2-react-navigations": "^28.1.41",
+    "@vercel/speed-insights": "^1.2.0",
     "classnames": "^2.5.1",
     "framer-motion": "^11.18.1",
+    "lucide-react": "^0.523.0",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",

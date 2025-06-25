@@ -2,9 +2,7 @@ import React from 'react';
 import { Route,Routes, createBrowserRouter, createRoutesFromElements, RouterProvider,useLocation, BrowserRouter } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Homepage from './pages/Homepage';
-
 import Navbar from './components/Navbar'
-
 import Unkownpage from './pages/Unkownpage';
 import CommentsPage from './pages/CommentsPage';
 import ContactMePage from './pages/ContactMePage';
