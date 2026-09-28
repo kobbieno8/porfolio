@@ -41,7 +41,50 @@
         "contactEmail": "aau.press@aau.edu.et",
         "contactPhone": "+251-111-239746"
       }
+    },
+     
+    {
+    "id": "4",
+    "title": "Kingdom Business Website",
+    "type": "Internship-project",
+    "short": "A modern responsive full-stack business website developed for Kingdom Business using the MERN stack.",
+    "description": "A full-stack corporate website developed during an internship at Kingdom Business. The website includes essential business pages such as Home, About Us, and Contact Us, along with a downloadable product catalogue and dark/light mode. The frontend uses Tailwind CSS and the application is built using the MERN stack.",
+    "location": "Ethiopia, Addis Ababa",
+    "company": {
+      "name": "Kingdom Business",
+      "description": "Kingdom Business is a business organization based in Ethiopia that distributes consumer products and operates its business activities from Addis Ababa.",
+      "contactEmail": "",
+      "contactPhone": ""
     }
+  },
+    {
+    "id": "5",
+    "title": "Enterprise SOC & Network Security Monitoring Lab",
+    "type": "Cybersecurity-project",
+    "short": "An enterprise-grade security operations lab integrating firewall routing, IDS/IPS inspection, SIEM log correlation, and automated incident triage.",
+    "description": "An enterprise security operations and network monitoring laboratory integrating pfSense firewall routing, Suricata IDS/IPS for threat inspection, Wazuh SIEM for log correlation and monitoring, and automated incident triage. The project also uses Shuffle SOAR, OpenSearch, Kali Linux, and Git.",
+    "location": "Ethiopia, Addis Ababa",
+    "company": {
+      "name": "Personal Project",
+      "description": "A cybersecurity laboratory project designed to demonstrate enterprise security monitoring, network threat detection, SIEM operations, and security automation.",
+      "contactEmail": "gulbetabel@gmail.com",
+      "contactPhone": "0984699777"
+    }
+  },
+   {
+    "id": "6",
+    "title": "Knowledge Management System (KMS)",
+    "type": "Personal-project",
+    "short": "A full-stack MERN knowledge management system featuring experiment tracking, localization, and role-based access control.",
+    "description": "A full-stack Knowledge Management System built using the MERN stack. The system features hypothesis-driven experiment tracking, native Amharic and English localization, and role-based access control governance.",
+    "location": "Ethiopia, Addis Ababa",
+    "company": {
+      "name": "Personal Project",
+      "description": "A personal full-stack application focused on knowledge management, experiment tracking, localization, and role-based access control.",
+      "contactEmail": "gulbetabel@gmail.com",
+      "contactPhone": "0984699777"
+    }
+  }
    
   ]
 }

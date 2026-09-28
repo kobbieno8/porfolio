@@ -27,11 +27,17 @@ const Card = () => {
     '/cards/The_food_vendor.jpg',
     '/cards/The_project.jpg',
     '/cards/database.webp',
+    '/cards/kingdom.png',
+    '/cards/soc.jpg',
+    '/cards/km.png'
   ];
   const arr_link = [
     'https://github.com/kobbieno8/my_food_management',
     'https://github.com/kobbieno8/my_jave_project_management_teacher_and_student',
     'https://github.com/kobbieno8/my_database_project_with_documentation',
+    'https://github.com/Kdus17/Distributer_website',
+    'https://github.com/kobbieno8/pfsense-suricata-wazuh-soc-lab',
+    'https://github.com/kobbieno8/knowledge-management'
   ];
 
   return (
