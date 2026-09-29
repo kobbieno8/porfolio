@@ -1,26 +1,32 @@
-import useTheme from "../../my-project/src/theme/Themebtn"
 import { useState } from "react";
-import classNames from 'classnames'
 
 const Toggle_btn = () => {
-    const {themeMode,darkTheme,lightTheme} = useTheme();
-const[select,setselect] = useState(true);
-var theme;
+  const [isDark, setIsDark] = useState(false);
+
+  const toggleTheme = () => {
+    const html = document.querySelector('html');
+    if (isDark) {
+      html.classList.remove('dark');
+    } else {
+      html.classList.add('dark');
+    }
+    setIsDark(!isDark);
+  };
+
   return (
-<div onClick={()=>{ if(themeMode == 'light'){
-        darkTheme();
-        theme =false;
-  
-      }else{
-        lightTheme();
-        theme =true;
-    
-      } setselect(!select)}} className={classNames(" md:w-20 md:h-50  bg-gray-300  rounded-full",{"bg-grey-100":select})}>
-<div  className={classNames("md:h-10 md:w-10  bg-slate-500 rounded-full",{"ml-10 bg-white":select})}>
-  </div>
-</div>
-  
-  )
-}
+    <div
+      onClick={toggleTheme}
+      className={`relative w-14 h-7 rounded-full cursor-pointer transition-colors duration-300 ${
+        isDark ? 'bg-indigo-600' : 'bg-gray-400'
+      }`}
+    >
+      <div
+        className={`absolute top-1 w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-300 ${
+          isDark ? 'translate-x-8' : 'translate-x-1'
+        }`}
+      />
+    </div>
+  );
+};
 
 export default Toggle_btn

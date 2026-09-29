@@ -1,8 +1,6 @@
 import { motion, useAnimation, useInView } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import commentsdata from '../comments.json';
-
-import { ThemeProvider } from '../../my-project/src/theme/Themebtn';
 import { FaGithub, FaThumbsUp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -41,7 +39,6 @@ const Card = () => {
   ];
 
   return (
-    <ThemeProvider>
       <motion.div
         variants={{
           hidden: { opacity: 0 },
@@ -57,18 +54,26 @@ const Card = () => {
         ref={ref}
         initial="hidden"
         animate={mainControls}
-        className="flex flex-wrap justify-center gap-8 p-5 bg-gray-200 dark:bg-blacki"
+        className="flex flex-wrap justify-center gap-8 p-5 bg-gray-200 dark:bg-darkBg"
       >
         {comments.map((com, index) => (
           <motion.div
             key={com.id}
-            variants={{ hidden: { opacity: 0, y: -100 }, show: { opacity: 1, y: 0 } }}
-            className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[22rem] bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col transition-all duration-300"
+            variants={{
+              hidden: { opacity: 0, y: 60, scale: 0.95 },
+              show: {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                transition: { type: "spring", stiffness: 80, damping: 16 }
+              }
+            }}
+            className="w-full sm:w-72 md:w-80 lg:w-96 xl:w-[22rem] bg-white dark:bg-darkSurface dark:border dark:border-white/5 rounded-lg shadow-md dark:shadow-indigo-950/30 overflow-hidden flex flex-col transition-all duration-300 hover:shadow-xl hover:-translate-y-1 dark:hover:border-indigo-500/40 dark:hover:shadow-indigo-900/40"
           >
             <div className="group relative">
               <div className="overlay absolute top-0 left-0 w-full h-full bg-slate-900 bg-opacity-0 group-hover:bg-opacity-80 transition-all duration-500 flex items-center justify-center">
                 <a href={arr_link[index]} target="_blank" rel="noopener noreferrer">
-                  <div className="h-12 w-12 border-2 rounded-full flex items-center justify-center text-white">
+                  <div className="h-12 w-12 border-2 rounded-full flex items-center justify-center text-white bg-white/20 hover:bg-white/40 transition-all duration-300">
                     <FaGithub size={20} />
                   </div>
                 </a>
@@ -83,7 +88,7 @@ const Card = () => {
               <span className="font-bold text-lg text-gray-800 dark:text-white">
                 {com.title}
               </span>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{com.short}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">{com.short}</p>
 
               <div className="flex justify-between items-center pt-2">
                 <Link
@@ -93,7 +98,7 @@ const Card = () => {
                   Read More
                 </Link>
 
-                <button className="flex items-center space-x-1 text-indigo-500 hover:text-indigo-700">
+                <button className="flex items-center space-x-1 text-indigo-400 hover:text-indigo-300">
                   <FaThumbsUp />
                 </button>
               </div>
@@ -101,7 +106,6 @@ const Card = () => {
           </motion.div>
         ))}
       </motion.div>
-    </ThemeProvider>
   );
 };
 

@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <nav className="w-full bg-gray-200 dark:bg-blacki dark:text-gray-400 p-4">
+      <nav className="w-full sticky top-0 z-50 backdrop-blur-md bg-white/70 dark:bg-darkBg/80 border-b border-transparent dark:border-indigo-900/30 shadow-sm dark:shadow-indigo-950/50 dark:text-gray-300 p-4">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <motion.div
